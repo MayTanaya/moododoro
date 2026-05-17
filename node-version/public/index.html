@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moododoro - Your Soft Little Focus Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <span class="badge">♡ soft productivity app ♡</span>
+            <h1>Moododoro</h1>
+            <h2 class="subtitle">Your soft little focus space.</h2>
+            <p class="description">
+                Moododoro helps you stay focused with a soft Pomodoro timer and a dreamy mood board for your study notes, feelings, and reflections.
+            </p>
+        </header>
+
+        <main class="main-content">
+            <!-- Timer Section -->
+            <section class="timer-section">
+                <div class="timer-card">
+                    <p class="timer-greeting">breathe, focus, bloom ❀</p>
+                    <div class="timer-modes">
+                        <button class="mode-btn active" data-mode="focus">Focus Time 25m</button>
+                        <button class="mode-btn" data-mode="sweet-break">Sweet Break 5m</button>
+                        <button class="mode-btn" data-mode="long-break">Long Cozy Break 15m</button>
+                    </div>
+                    <div class="timer-display" id="timerDisplay">
+                        25:00
+                    </div>
+                    <p class="timer-status" id="timerStatus">current session: focus gently</p>
+                    <div class="timer-controls">
+                        <button class="btn btn-primary" id="startBtn">Start Focus</button>
+                        <button class="btn btn-secondary" id="pauseBtn">Pause for a Moment</button>
+                        <button class="btn btn-outline" id="resetBtn">Reset Timer</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Focus Note Form Section -->
+            <section class="form-section">
+                <div class="form-card">
+                    <h3>My Soft Focus Note</h3>
+                    <form id="noteForm">
+                        <div class="form-group">
+                            <label for="sessionTarget">Session Target</label>
+                            <input type="text" id="sessionTarget" placeholder="What do you want to focus on today?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="currentMood">Current Mood</label>
+                            <select id="currentMood" required>
+                                <option value="" disabled selected>Select your mood...</option>
+                                <option value="Calm">Calm</option>
+                                <option value="Dreamy">Dreamy</option>
+                                <option value="Focused">Focused</option>
+                                <option value="Softly Tired">Softly Tired</option>
+                                <option value="Romanticizing Study">Romanticizing Study</option>
+                                <option value="Overwhelmed but Trying">Overwhelmed but Trying</option>
+                                <option value="Peaceful">Peaceful</option>
+                                <option value="Motivated">Motivated</option>
+                                <option value="Cozy">Cozy</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tinyTodo">Tiny To-do</label>
+                            <textarea id="tinyTodo" rows="3" placeholder="Write your tiny to-do list here..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="littleReflection">Little Reflection</label>
+                            <textarea id="littleReflection" rows="3" placeholder="Leave a little reflection after your session..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">Add to My Board ✦</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mood Board Section -->
+        <section class="board-section">
+            <div class="board-header">
+                <h2>My Cozy Mood Board</h2>
+                <button class="btn btn-danger-outline" id="clearAllBtn">Clear My Board</button>
+            </div>
+            
+            <div id="emptyState" class="empty-state">
+                <p>Your board is still empty. Start your first soft focus session. ♡</p>
+            </div>
+
+            <div class="board-grid" id="boardGrid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
