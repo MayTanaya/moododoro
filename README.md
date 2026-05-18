@@ -76,27 +76,7 @@ Project ini dibuat untuk memenuhi tugas praktikum deployment. Rencana deployment
 - **HTML (folder docs) ke GitHub Pages**: Folder `docs` akan digunakan untuk host aplikasi via GitHub Pages (Deploy from branch main/docs folder).
 
 ## Link Deployment
-*(Bagian ini akan diisi setelah aplikasi berhasil dideploy)*
 - **Vercel**: [Link Vercel]
 - **Netlify**: [Link Netlify]
 - **GitHub Pages**: [Link GitHub Pages]
 - **Custom Domain**: [Link Custom Domain]
-
-## Pengujian Performa
-
-| Provider | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 | Average Total Time | Average TTFB |
-|----------|--------|--------|--------|--------|--------|--------------------|--------------|
-| Vercel   |        |        |        |        |        |                    |              |
-| Netlify  |        |        |        |        |        |                    |              |
-| GitHub   |        |        |        |        |        |                    |              |
-
-## Evaluasi Provider
-
-| Kriteria | Vercel | Netlify | GitHub Pages |
-|----------|--------|---------|--------------|
-| Kemudahan setup | | | |
-| Kecepatan deploy | | | |
-| CI/CD & Git | | | |
-| Fitur free tier | | | |
-| Dokumentasi | | | |
-| Cocok untuk prototyping | | | |
